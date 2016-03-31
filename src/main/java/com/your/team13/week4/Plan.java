@@ -8,7 +8,7 @@ public class Plan {
 	protected double rate_per_excess_minutes; // 초과 시간당 요금
 
 	public Plan() {
-
+		super();
 	}
 
 	public double getBasic_monthly_rate() {

@@ -40,6 +40,6 @@ public class App {
 		customer = new Customer(plan, calltime, line_number);
 		calculate = new Calculate(customer);
 
-		System.out.println("금액 : " + calculate.total_rate());
+		System.out.println("금액 : " + calculate.totalRate());
 	}
 }

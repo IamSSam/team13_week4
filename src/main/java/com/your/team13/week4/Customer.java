@@ -5,11 +5,12 @@ public class Customer {
 	// optional
 	// private String name;
 	// private String address;
-	// private String period_of_payment;// �����غ���!!
-	private int line_number; // ��ȭ�� ��
-	private int calltime; // ���ð�
+	// private String period_of_payment;
+	
+	private int line_number;  
+	private int calltime;  
 
-	protected Plan plan; // �����
+	protected Plan plan; 
 
 	// public Customer(String name, String address, String period_of_payment,
 	// Plan plan, int line_number, int time) {
@@ -51,12 +52,12 @@ public class Customer {
 		this.line_number = line_number;
 	}
 
-	public int getTime() {
+	public int getCallTime() {
 		return calltime;
 	}
 
-	public void setTime(int time) {
-		this.calltime = time;
+	public void setCallTime(int calltime) {
+		this.calltime = calltime;
 	}
 
 }
