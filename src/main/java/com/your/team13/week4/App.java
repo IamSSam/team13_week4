@@ -2,10 +2,6 @@ package com.your.team13.week4;
 
 import java.util.Scanner;
 
-/**
- * Hello world!
- *
- */
 public class App {
 
 	public static void main(String[] args) {
@@ -20,7 +16,7 @@ public class App {
 
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Plan : ");
+		System.out.print("Plan : ");
 		input_plan = sc.next();
 
 		if (input_plan.equals("Gold")) {
@@ -29,10 +25,10 @@ public class App {
 			plan = new Silver();
 		}
 
-		System.out.println("총사용시간 : ");
+		System.out.print("총사용시간 : ");
 		calltime = sc.nextInt();
 
-		System.out.println("사용회선 : ");
+		System.out.print("사용회선 : ");
 		line_number = sc.nextInt();
 
 		sc.close();

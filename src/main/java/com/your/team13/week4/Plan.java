@@ -2,10 +2,10 @@ package com.your.team13.week4;
 
 public class Plan {
 
-	public double additional_line_rate; // 추가 회선에 따른 요금
-	public double basic_monthly_rate; // 기본 요금
-	public int included_minutes; // 기본 제공 시간
-	public double rate_per_excess_minutes; // 초과 시간당 요금
+	protected double additional_line_rate; // 추가 회선에 따른 요금
+	protected double basic_monthly_rate; // 기본 요금
+	protected int included_minutes; // 기본 제공 시간
+	protected double rate_per_excess_minutes; // 초과 시간당 요금
 
 	public Plan() {
 
