@@ -4,12 +4,15 @@ import java.util.Scanner;
 
 public class App {
 
-	public static void main(String[] args) {
+	private App() {
 
-		String input_plan;
+	}
+
+	public static void main(String[] args) {
+		String inputPlan;
 		int calltime;
-		int line_number;
-		
+		int lineNumber;
+
 		Plan plan = null;
 		Calculate calculate;
 		Customer customer;
@@ -17,11 +20,11 @@ public class App {
 		Scanner sc = new Scanner(System.in);
 
 		System.out.print("Plan : ");
-		input_plan = sc.next();
+		inputPlan = sc.next().toLowerCase();
 
-		if (input_plan.equals("Gold")) {
+		if ("gold".equals(inputPlan)) {
 			plan = new Gold();
-		} else if (input_plan.equals("Silver")) {
+		} else if ("silver".equals(inputPlan)) {
 			plan = new Silver();
 		}
 
@@ -29,13 +32,13 @@ public class App {
 		calltime = sc.nextInt();
 
 		System.out.print("사용회선 : ");
-		line_number = sc.nextInt();
+		lineNumber = sc.nextInt();
 
 		sc.close();
-		
-		customer = new Customer(plan, calltime, line_number);
+
+		customer = new Customer(plan, calltime, lineNumber);
 		calculate = new Calculate(customer);
 
-		System.out.println("금액 : " + calculate.total_rate());
+		System.out.printf("금액 : %.2f", calculate.total_rate());
 	}
 }
