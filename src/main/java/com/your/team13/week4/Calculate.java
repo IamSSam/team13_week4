@@ -10,24 +10,24 @@ public class Calculate { // ��길!
 	public double totalRate() {
 		double sum = 0;
 
-		if (this.isFamliyDiscount()) {
-			sum += customer.plan.getBasic_monthly_rate() + (customer.plan.additional_line_rate * 2)
-					+ ((customer.getLine_number() - 3) * 5);
+		if (this.isFamliy_discount()) {
+			sum += customer.plan.getbasicMonthlyRate() + (customer.plan.additionalLineRate * 2)
+					+ ((customer.getlineNumber() - 3) * 5);
 		} else {
-			sum += customer.plan.getBasic_monthly_rate()
-					+ (customer.plan.additional_line_rate * (customer.getLine_number() - 1));
+			sum += customer.plan.getbasicMonthlyRate()
+					+ (customer.plan.additionalLineRate * (customer.getlineNumber() - 1));
 		}
 
 		if (this.isOverCalltime()) {
-			sum += (customer.getCallTime() - customer.plan.getIncluded_minutes())
-					* customer.plan.getRate_per_excess_minutes();
+			sum += (customer.getCallTime() - customer.plan.getincludedMinutes())
+					* customer.plan.getratePerExcessMinutes();
 		}
 
 		return sum;
 	}
 
-	public boolean isFamliyDiscount() {
-		if (customer.getLine_number() >= 4) {
+	public boolean isFamliy_discount() {
+		if (customer.getlineNumber() >= 4) {
 			return true;
 		}
 
@@ -35,10 +35,9 @@ public class Calculate { // ��길!
 	}
 
 	public boolean isOverCalltime() {
-		if (customer.getCallTime() - customer.plan.getIncluded_minutes() > 0) {
+		if (customer.getCallTime() - customer.plan.getincludedMinutes() > 0) {
 			return true;
 		}
-
 		return false;
 	}
 
