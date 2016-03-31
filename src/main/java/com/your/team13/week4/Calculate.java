@@ -1,6 +1,6 @@
 package com.your.team13.week4;
 
-public class Calculate { // 계산 !
+public class Calculate { // ��길!
 	Customer customer;
 
 	public Calculate(Customer customer) {
@@ -19,11 +19,8 @@ public class Calculate { // 계산 !
 		return sum;
 	}
 
-	public boolean is_famliy_discount() {
-		if (customer.getLine_number() >= 4)
-			return true;
-		else
-			return false;
+	public double famliy_discount() {
+		return 0;
 	}
 
 }

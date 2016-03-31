@@ -11,15 +11,16 @@ public class Customer {
 
 	protected Plan plan; // �����
 
-//	public Customer(String name, String address, String period_of_payment, Plan plan, int line_number, int time) {
-//		// this.name = name;
-//		// this.address = address;
-//		// this.period_of_payment = period_of_payment;
-//		this.plan = plan;
-//		this.line_number = line_number;
-//		this.calltime = time;
-//	}
-	
+	// public Customer(String name, String address, String period_of_payment,
+	// Plan plan, int line_number, int time) {
+	// // this.name = name;
+	// // this.address = address;
+	// // this.period_of_payment = period_of_payment;
+	// this.plan = plan;
+	// this.line_number = line_number;
+	// this.calltime = time;
+	// }
+
 	public Customer(Plan plan, int calltime, int line_number) {
 		this.plan = plan;
 		this.calltime = calltime;
