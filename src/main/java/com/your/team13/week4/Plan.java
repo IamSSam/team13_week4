@@ -2,46 +2,46 @@ package com.your.team13.week4;
 
 public class Plan {
 
-	protected double additional_line_rate; // 추가 회선에 따른 요금
-	protected double basic_monthly_rate; // 기본 요금
-	protected int included_minutes; // 기본 제공 시간
-	protected double rate_per_excess_minutes; // 초과 시간당 요금
+	protected double additionalLineRate; // 추가 회선에 따른 요금
+	protected double basicMonthlyRate; // 기본 요금
+	protected int includedMinutes; // 기본 제공 시간
+	protected double ratePerExcessMinutes; // 초과 시간당 요금
 
 	public Plan() {
-		
+		super();
 	}
 
-	public double getBasic_monthly_rate() {
-		return basic_monthly_rate;
+	public double getbasicMonthlyRate() {
+		return basicMonthlyRate;
 	}
 
-	public void setBasic_monthly_rate(double basic_monthly_rate) {
-		this.basic_monthly_rate = basic_monthly_rate;
+	public void setbasicMonthlyRate(double basicMonthlyRate) {
+		this.basicMonthlyRate = basicMonthlyRate;
 	}
 
-	public int getIncluded_minutes() {
-		return included_minutes;
+	public int getincludedMinutes() {
+		return includedMinutes;
 	}
 
-	public void setIncluded_minutes(int included_minutes) {
-		this.included_minutes = included_minutes;
+	public void setincludedMinutes(int includedMinutes) {
+		this.includedMinutes = includedMinutes;
 	}
 
-	public double getRate_per_excess_minutes() {
-		return rate_per_excess_minutes;
+	public double getratePerExcessMinutes() {
+		return ratePerExcessMinutes;
 	}
 
-	public void setRate_per_excess_minutes(double rate_per_excess_minutes) {
-		this.rate_per_excess_minutes = rate_per_excess_minutes;
+	public void setratePerExcessMinutes(double ratePerExcessMinutes) {
+		this.ratePerExcessMinutes = ratePerExcessMinutes;
 	}
 
-	public double getAdditional_line_rate() {
+	public double getadditionalLineRate() {
 
-		return additional_line_rate;
+		return additionalLineRate;
 	}
 
-	public void setAdditional_line_rate(double additional_line_rate) {
-		this.additional_line_rate = additional_line_rate;
+	public void setadditionalLineRate(double additionalLineRate) {
+		this.additionalLineRate = additionalLineRate;
 	}
 
 }
