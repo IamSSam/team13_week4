@@ -1,25 +1,36 @@
 package com.your.team13.week4;
 
+import java.io.PrintStream;
 import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class App {
+	private static final Logger logger = Logger.getLogger(App.class.getName());
 
 	private App() {
 
 	}
 
 	public static void main(String[] args) {
+		
+		
 		String inputPlan;
 		int calltime;
 		int lineNumber;
 
+		
 		Plan plan = null;
 		Calculate calculate;
 		Customer customer;
 
 		Scanner sc = new Scanner(System.in);
 
-		System.out.print("Plan : ");
+		logger.log(Level.INFO, " Plan : ");
+		
+		PrintStream out = System.out;
+		out.print("Plan : ");
+		
 		inputPlan = sc.next().toLowerCase();
 
 		if ("gold".equals(inputPlan)) {
@@ -39,6 +50,6 @@ public class App {
 		customer = new Customer(plan, calltime, lineNumber);
 		calculate = new Calculate(customer);
 
-		System.out.printf("금액 : %.2f", calculate.total_rate());
+		System.out.printf("금액 : %.2f", calculate.totalRate());
 	}
 }

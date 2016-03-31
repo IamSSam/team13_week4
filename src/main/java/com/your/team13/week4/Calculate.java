@@ -6,10 +6,10 @@ public class Calculate { // 계산 !
 		this.customer = customer;
 	}
 
-	public double total_rate() {
+	public double totalRate() {
 		double sum = 0;
 		
-		if(this.isFamliy_discount()) {
+		if(this.isFamliyDiscount()) {
 			sum += customer.plan.getbasicMonthlyRate() + (customer.plan.additionalLineRate * 2) + ((customer.getlineNumber() - 3) * 5);
 		}
 		else {
@@ -23,7 +23,7 @@ public class Calculate { // 계산 !
 		return sum;
 	}
 	
-	public boolean isFamliy_discount(){
+	public boolean isFamliyDiscount(){
 		if(customer.getlineNumber() >= 4) {
 			return true;
 		}
