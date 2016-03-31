@@ -1,6 +1,5 @@
 package com.your.team13.week4;
 
-import java.io.PrintStream;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
