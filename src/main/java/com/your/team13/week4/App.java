@@ -13,7 +13,7 @@ public class App {
 		String input_plan;
 		int calltime;
 		int line_number;
-		
+
 		Plan plan = null;
 		Calculate calculate;
 		Customer customer;
@@ -36,7 +36,7 @@ public class App {
 		line_number = sc.nextInt();
 
 		sc.close();
-		
+
 		customer = new Customer(plan, calltime, line_number);
 		calculate = new Calculate(customer);
 
