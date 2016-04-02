@@ -1,6 +1,6 @@
 package com.your.team13.week4;
 
-public class Calculate {
+public class Calculate { // 계산 !
 	Customer customer;
 
 	public Calculate(Customer customer) {
@@ -22,6 +22,7 @@ public class Calculate {
 			sum += (customer.getCallTime() - customer.plan.getincludedMinutes())
 					* customer.plan.getratePerExcessMinutes();
 		}
+
 		return sum;
 	}
 
@@ -37,6 +38,7 @@ public class Calculate {
 		if (customer.getCallTime() - customer.plan.getincludedMinutes() > 0) {
 			return true;
 		}
+
 		return false;
 	}
 

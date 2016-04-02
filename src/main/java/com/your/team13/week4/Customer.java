@@ -8,7 +8,6 @@ public class Customer {
 	protected Plan plan;
 
 	public Customer(Plan plan, int calltime, int lineNumber) {
-
 		this.plan = plan;
 		this.calltime = calltime;
 		this.lineNumber = lineNumber;

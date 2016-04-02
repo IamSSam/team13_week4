@@ -4,10 +4,6 @@ import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- * Hello world!
- *
- */
 public class App {
 	private static final Logger logger = Logger.getLogger(App.class.getName());
 
@@ -35,7 +31,6 @@ public class App {
 			plan = new Silver();
 		}
 
-		System.out.println("총사용시간 : ");
 		logger.log(Level.INFO, " 총 사용시간 : ");
 		calltime = sc.nextInt();
 
