@@ -1,12 +1,15 @@
 package com.your.team13.week4;
 
 import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Hello world!
  *
  */
 public class App {
+	private static final Logger logger = Logger.getLogger(App.class.getName());
 
 	private App() {
 
@@ -15,7 +18,6 @@ public class App {
 	public static void main(String[] args) {
 		String inputPlan;
 		int calltime;
-
 		int lineNumber;
 
 		Plan plan = null;
@@ -24,7 +26,7 @@ public class App {
 
 		Scanner sc = new Scanner(System.in);
 
-		System.out.print("Plan : ");
+		logger.log(Level.INFO, " Plan : ");
 		inputPlan = sc.next().toLowerCase();
 
 		if ("gold".equals(inputPlan)) {
@@ -34,9 +36,10 @@ public class App {
 		}
 
 		System.out.println("총사용시간 : ");
+		logger.log(Level.INFO, " 총 사용시간 : ");
 		calltime = sc.nextInt();
 
-		System.out.print("사용회선 : ");
+		logger.log(Level.INFO, " 사용회선 : ");
 		lineNumber = sc.nextInt();
 
 		sc.close();

@@ -1,6 +1,6 @@
 package com.your.team13.week4;
 
-public class Calculate { // ��길!
+public class Calculate {
 	Customer customer;
 
 	public Calculate(Customer customer) {
@@ -10,7 +10,7 @@ public class Calculate { // ��길!
 	public double totalRate() {
 		double sum = 0;
 
-		if (this.isFamliy_discount()) {
+		if (this.isFamliyDiscount()) {
 			sum += customer.plan.getbasicMonthlyRate() + (customer.plan.additionalLineRate * 2)
 					+ ((customer.getlineNumber() - 3) * 5);
 		} else {
@@ -22,11 +22,10 @@ public class Calculate { // ��길!
 			sum += (customer.getCallTime() - customer.plan.getincludedMinutes())
 					* customer.plan.getratePerExcessMinutes();
 		}
-
 		return sum;
 	}
 
-	public boolean isFamliy_discount() {
+	public boolean isFamliyDiscount() {
 		if (customer.getlineNumber() >= 4) {
 			return true;
 		}
