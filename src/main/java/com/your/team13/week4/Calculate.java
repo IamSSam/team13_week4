@@ -22,7 +22,6 @@ public class Calculate { // 계산 !
 			sum += (customer.getCallTime() - customer.plan.getincludedMinutes())
 					* customer.plan.getratePerExcessMinutes();
 		}
-
 		return sum;
 	}
 

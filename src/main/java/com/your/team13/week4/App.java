@@ -42,6 +42,9 @@ public class App {
 		customer = new Customer(plan, calltime, lineNumber);
 		calculate = new Calculate(customer);
 
+		customer = new Customer(plan, calltime, lineNumber);
+		calculate = new Calculate(customer);
+
 		System.out.printf("금액 : %.2f", calculate.totalRate());
 	}
 }
